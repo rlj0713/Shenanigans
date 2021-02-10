@@ -1,0 +1,46 @@
+Project Idea:
+
+--------------------------------------------------------------
+Goal:
+Determine the likelihood of shenanigans at school
+
+Take User Input + Scraped Data
+Return a Shenanigan score → Low, Medium, High
+--------------------------------------------------------------
+
+Scrape the moon cycle from wunderground
+    If the date is within 2 days of a full moon (score +1)
+
+Take the day of the week from the calendar (built in?)
+    If the date falls on a Friday (score +1)
+
+Scrape the proximity to a holiday from kcs website
+    If the date is within 2 days of a major holiday (more than 3 days b/t now and next school day) (score +2)
+
+--------------------------------------------------------------
+Final Product:
+
+Welcome weary teacher, to know the future, type the password to the future, “shenanigans”.
+→ shenanigans
+Ah, so you really want to know, do you? (Yes/No)
+→ Yes  (no exits)
+Are you asking about today (Yes/No)
+**User inputs date (defaults to today)
+→ No
+Please enter a date (MM/DD/YYYY)
+→ 01/01/2001
+
+→ Yes
+	The likelihood of shenanigans today is _____. (Low, Medium, High)
+		If Low - (Output) Don’t get too comfortable, anything can still happen!
+		If Medium - (Output) Stay alert, the likelihood of shenanigans is medium today.
+		If High - (Output) Brace yourself, there is a storm coming...
+App escapes
+--------------------------------------------------------------
+
+Thoughts:
+	Day objects have attributes like:
+        Proximity to full moon (value +/-)
+        Day of week
+        Proximity to extended vacation
+        Shenanigan points total
